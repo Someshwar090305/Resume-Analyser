@@ -338,9 +338,12 @@ with col_right:
     )
 
 st.markdown("<br>", unsafe_allow_html=True)
-_, btn_center, _ = st.columns([1, 2, 1])
-with btn_center:
-    analyse_clicked = st.button("🔍 Analyse Resume", key="analyse_btn")
+
+st.markdown("""
+<div style="display: flex; justify-content: center;">
+""", unsafe_allow_html=True)
+analyse_clicked = st.button("🔍 Analyse Resume", key="analyse_btn")
+st.markdown("</div>", unsafe_allow_html=True)
 
 if analyse_clicked:
     resume_val = st.session_state.get("resume_textarea", "").strip()
