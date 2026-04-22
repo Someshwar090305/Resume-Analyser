@@ -268,7 +268,7 @@ div.stButton > button:hover {
 </style>
 """, unsafe_allow_html=True)
 
-st.markdown('<div class="hero-title">🎯 Resume Analyzer & Job Matcher</div>', unsafe_allow_html=True)
+st.markdown('<div class="hero-title"> Resume Analyzer & Job Matcher</div>', unsafe_allow_html=True)
 st.markdown('<div class="hero-sub">AI-powered resume analysis driven by Claude — get your match score in seconds</div>', unsafe_allow_html=True)
 
 st.markdown("""
